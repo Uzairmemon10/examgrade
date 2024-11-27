@@ -1,0 +1,373 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: red;
+    display: flex;
+    border: solid 2px black;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 580px;
+    /* text-align: center; */
+    border-radius: 40%;
+}
+
+h1 {
+    /* background-color: red; */
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    width: 100%;
+    text-decoration: underline white;
+}
+
+.input {
+    width: 49.8%;
+    height: 100px;
+    border-radius: 25px;
+    padding: 0.5px;
+}
+
+#totalmarks {
+    margin-top: 30px;
+    margin-left: 10%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 70%;
+    height: 20px;
+    background-color: red;
+    color: white;
+    /* animation-name: color; */
+}
+
+#totalmarks:hover {
+    animation-name: color;
+    animation-duration: 1.5s;
+
+
+}
+
+@keyframes color {
+    0% {
+        background-color: red;
+        border: solid 1px black;
+    }
+
+    100% {
+        background-color: white;
+        border: solid 3px black;
+
+    }
+}
+
+#obtainedmarks {
+    margin-top: 30px;
+    margin-left: 10%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 70%;
+    font-weight: 900;
+    color: white;
+    background-color: red;
+    outline-style: none;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 270px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    background-color: white;
+    color: red;
+}
+
+button:hover {
+    background-color: black;
+    color: red;
+    box-shadow: 2px 2px 5px 2px white;
+}
+
+.box {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    background-color: white;
+    color: red;
+    margin-top: 30px;
+    border: solid 1px black;
+    width: 49.7%;
+    height: 310px;
+
+}
+
+#percentage {
+    margin-top: 85px;
+    animation-name: uz;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes uz {
+    0% {
+        color: red;
+    }
+
+    20% {
+        color: black;
+    }
+
+    40% {
+        color: red;
+    }
+
+    60% {
+        color: black;
+    }
+
+    80% {
+        color: red;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.box2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 30px;
+    width: 49.85%;
+    border: solid 1px black;
+    height: 310px;
+    background-color: black;
+    color: red;
+}
+
+#grade {
+    position: relative;
+    margin-top: 85px;
+    animation-name: uzair;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+@keyframes uzair {
+    0% {
+        color: red;
+        filter: blur(20px);
+    }
+
+    20% {
+        color: white;
+        filter: blur(5px);
+    }
+
+    40% {
+        color: red;
+        filter: blur(0px);
+    }
+
+    60% {
+        color: white;
+    }
+
+    80% {
+        color: red;
+    }
+
+    100% {
+        color: white;
+
+    }
+}
+@media only screen and (max-width:767px){
+
+    .container {
+        width: 70%;
+        border-radius: 20%;
+    margin-top: 40px;    
+    }
+    
+    .input {
+        width: 49.65%;
+        height: 100px;
+        border-radius: 25px;
+        padding: 0.5px;
+    }
+    
+    #totalmarks {
+        margin-left: 0%;
+        font-size: 13px;
+        width: 100%;
+        }
+    
+    
+    button {
+        margin-left: 110px;
+        }
+    
+    
+    .box {
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        background-color: white;
+        color: red;
+        margin-top: 30px;
+        border: solid 1px black;
+        width: 49.2%;
+        height: 310px;
+    
+    }
+    
+}
+@media only screen and (min-width:340px) and (max-width:404px) {
+    .container {
+        width: 70%;
+        border-radius: 10%;
+    margin-top: 40px;    
+    }
+    
+    .input {
+        width: 49.2%;
+        height: 100px;
+        border-radius: 25px;
+        padding: 0.5px;
+    }
+    
+    #totalmarks {
+        margin-left: 0%;
+        font-size: 9px;
+        width: 90%;
+        }
+    
+#obtainedmarks {
+    width: 70%;
+    font-size: 7px;
+    font-weight: 400;
+  }
+    
+    button {
+        margin-left: 70px;
+        }
+    
+    
+    .box {
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        background-color: white;
+        color: red;
+        margin-top: 30px;
+        border: solid 1px black;
+        width: 49%;
+        height: 310px;
+    
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .container {
+        background-color: red;
+        width: 50%;
+        height: 580px;
+        border-radius: 40%;
+margin-top: 50px;
+    }
+
+    .input {
+        width: 49%;
+        
+    }
+
+    #totalmarks {
+        font-size: 15px;
+        width: 90%;
+        }
+
+  
+    button {
+        margin-left: 150px;
+        }
+
+    
+    .box {
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        background-color: white;
+        color: red;
+        margin-top: 30px;
+        border: solid 1px black;
+        width: 49.45%;
+        height: 310px;
+
+    }
+
+    #percentage {
+        margin-top: 85px;
+        animation-name: uz;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+
+    }
+
+    .box2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        margin-top: 30px;
+        width: 49.85%;
+        border: solid 1px black;
+        height: 310px;
+        background-color: black;
+        color: red;
+    }
+
+    #grade {
+        position: relative;
+        margin-top: 85px;
+        animation-name: uzair;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        overflow: hidden;
+    }
+
+}
+
+@media only screen and (min-width:996px) and (max-width:1025px) {
+
+button{
+  margin-left: 210px;  
+}
+
+}
+
+
